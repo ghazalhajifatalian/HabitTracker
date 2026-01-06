@@ -111,7 +111,7 @@ Contributions are welcome! If you'd like to improve Habity, please:
 
 ## 📞 Contact
 
-- **Developer**: Ghazal Hajifatalian
+- **Developer**: Zahra Hajifatalian
 - **Email**: [ghazalhajifatalian2000@gmail.com](mailto:ghazalhajifatalian2000@gmail.com)
 
 ---
