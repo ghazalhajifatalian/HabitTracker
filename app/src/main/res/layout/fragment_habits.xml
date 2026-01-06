@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/OffWhite"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="12dp"
+        app:cardBackgroundColor="@color/secondary"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="3dp">
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chipGroupDays"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layoutDirection="rtl"
+            app:chipSpacing="8dp">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipSat"
+                style="@style/Widget.Material3.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="شنبه"
+                android:textColor="@color/DarkBlueGray"
+                app:chipBackgroundColor="@color/OffWhite"
+                app:chipStrokeColor="@color/OffWhite" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipSun"
+                style="@style/Widget.Material3.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="یکشنبه"
+                android:textColor="@color/DarkBlueGray"
+                app:chipBackgroundColor="@color/OffWhite"
+                app:chipStrokeColor="@color/OffWhite" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipMon"
+                style="@style/Widget.Material3.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="دوشنبه"
+                android:textColor="@color/DarkBlueGray"
+                app:chipBackgroundColor="@color/OffWhite"
+                app:chipStrokeColor="@color/OffWhite" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipTue"
+                style="@style/Widget.Material3.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="سه شنبه"
+                android:textColor="@color/DarkBlueGray"
+                app:chipBackgroundColor="@color/OffWhite"
+                app:chipStrokeColor="@color/OffWhite" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipWed"
+                style="@style/Widget.Material3.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="چهارشنبه"
+                android:textColor="@color/DarkBlueGray"
+                app:chipBackgroundColor="@color/OffWhite"
+                app:chipStrokeColor="@color/OffWhite" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipThu"
+                style="@style/Widget.Material3.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="پنجشنبه"
+                android:textColor="@color/DarkBlueGray"
+                app:chipBackgroundColor="@color/OffWhite"
+                app:chipStrokeColor="@color/OffWhite" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipFri"
+                style="@style/Widget.Material3.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="جمعه"
+                android:textColor="@color/DarkBlueGray"
+                app:chipBackgroundColor="@color/OffWhite"
+                app:chipStrokeColor="@color/OffWhite" />
+
+        </com.google.android.material.chip.ChipGroup>
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- RecyclerView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerHabits"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="78dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:scrollbars="vertical" />
+</LinearLayout>

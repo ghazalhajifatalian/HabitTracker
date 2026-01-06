@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Habbit Tracker</string>
+
+    <string name="default_web_client_id">
+        652069578568-mut757a492hriuhcvof07k7tbr3nio0k.apps.googleusercontent.com
+    </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

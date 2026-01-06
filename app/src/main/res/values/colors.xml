@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+<!--    <color name="primary">#4CAF50</color>-->
+<!--    <color name="secondary">#A5D6A7</color>-->
+<!--    <color name="WarmAmbe">#FFB300</color>-->
+<!--    <color name="OffWhite">#F5F2F2</color>-->
+<!--    <color name="DarkBlueGray">#263238</color>-->
+
+
+<!--    <color name="OverlayDark">#B3263238</color>-->
+<!--    <color name="GlassCard">#F8FFFFFF</color>-->
+
+
+<!--    <color name="primary">#7151A9</color>-->
+<!--    <color name="secondary">#AC8BEE</color>-->
+<!--    <color name="WarmAmbe">#FFB300</color>-->
+<!--    <color name="OffWhite">#EBE0FF</color>-->
+<!--    <color name="DarkBlueGray">#3F3649</color>-->
+
+
+<!--    <color name="OverlayDark">#B33F3649</color>-->
+<!--    <color name="GlassCard">#E6EBE0FF</color>-->
+
+<!--    <color name="primary">#B08968</color>-->
+<!--    <color name="secondary">#E6CCB2</color>-->
+<!--    <color name="WarmAmbe">#DDB892</color>-->
+<!--    <color name="OffWhite">#EDE0D4</color>-->
+<!--    <color name="DarkBlueGray">#7F5539</color>-->
+
+
+<!--    <color name="OverlayDark">#B37F5539</color>-->
+<!--    <color name="GlassCard">#E6EDE0D4</color>-->
+
+    <color name="secondary">#ADDC76</color>
+    <color name="primary">#66BB6A</color>
+    <color name="WarmAmbe">#81C784</color>
+    <color name="OffWhite">#F7F9FC</color>
+    <color name="DarkBlueGray">#2F3A40</color>
+
+    <color name="OverlayDark">#99212121</color>
+    <color name="GlassCard">#ECFFFFFF</color>
+
+
+</resources>

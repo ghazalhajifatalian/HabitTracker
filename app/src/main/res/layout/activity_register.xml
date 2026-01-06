@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- ================= MAIN CONTENT ================= -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/OffWhite"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <ImageView
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_marginBottom="10dp"
+            app:srcCompat="@drawable/signup" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="نام"
+            app:boxBackgroundMode="outline"
+            app:boxCornerRadiusTopStart="14dp"
+            app:boxCornerRadiusTopEnd="14dp"
+            app:boxCornerRadiusBottomStart="14dp"
+            app:boxCornerRadiusBottomEnd="14dp"
+            app:boxStrokeColor="@color/DarkBlueGray">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/DarkBlueGray"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:hint="ایمیل"
+            app:boxBackgroundMode="outline"
+            app:boxCornerRadiusTopStart="14dp"
+            app:boxCornerRadiusTopEnd="14dp"
+            app:boxCornerRadiusBottomStart="14dp"
+            app:boxCornerRadiusBottomEnd="14dp"
+            app:boxStrokeColor="@color/DarkBlueGray">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/DarkBlueGray"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:hint="رمز عبور"
+            app:boxBackgroundMode="outline"
+            app:boxCornerRadiusTopStart="14dp"
+            app:boxCornerRadiusTopEnd="14dp"
+            app:boxCornerRadiusBottomStart="14dp"
+            app:boxCornerRadiusBottomEnd="14dp"
+            app:boxStrokeColor="@color/DarkBlueGray">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:inputType="textPassword"
+                android:textColor="@color/DarkBlueGray"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnRegister"
+            android:layout_width="300dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="26dp"
+            android:text="ثبت‌نام"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            app:cornerRadius="18dp"
+            app:backgroundTint="@color/DarkBlueGray"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnGoogle"
+            android:layout_width="300dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="8dp"
+            android:text="ثبت‌نام با گوگل"
+            android:textStyle="bold"
+            android:textColor="@color/primary"
+            app:icon="@drawable/search"
+            app:iconTint="@null"
+            app:iconPadding="12dp"
+            app:iconGravity="textStart"
+            app:backgroundTint="@android:color/transparent"
+            app:cornerRadius="18dp"
+            app:strokeColor="@color/primary"
+            app:strokeWidth="2dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="حساب دارم"
+            android:textColor="@color/DarkBlueGray"
+            app:backgroundTint="@android:color/transparent"
+            android:layout_marginTop="12dp"/>
+    </LinearLayout>
+
+    <!-- ================= LOADING OVERLAY ================= -->
+    <FrameLayout
+        android:id="@+id/loadingOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#B3263238"
+        android:visibility="gone"
+        android:clickable="true"
+        android:focusable="true">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="240dp"
+            android:layout_height="190dp"
+            android:layout_gravity="center"
+            app:cardCornerRadius="26dp"
+            app:cardElevation="14dp"
+            app:cardBackgroundColor="#F8FFFFFF">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="28dp">
+
+                <com.google.android.material.progressindicator.CircularProgressIndicator
+                    android:layout_width="52dp"
+                    android:layout_height="52dp"
+                    app:indicatorColor="@color/primary"
+                    app:trackColor="@color/secondary"
+                    app:trackThickness="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:text="در حال ثبت‌نام…"
+                    android:textColor="@color/DarkBlueGray"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </FrameLayout>
+
+</FrameLayout>
