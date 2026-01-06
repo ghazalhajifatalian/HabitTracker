@@ -56,8 +56,16 @@ public class ProfileFragment extends Fragment {
 
 
         btnEditProfile.setOnClickListener(v -> {
-            // open edit profile fragment or dialog
+            EditProfileBottomSheet sheet = new EditProfileBottomSheet();
+
+            sheet.setOnProfileUpdatedListener(() -> {
+                loadUserInfo();
+            });
+
+            sheet.show(getParentFragmentManager(), "EditProfile");
         });
+
+
 
         return view;
     }
